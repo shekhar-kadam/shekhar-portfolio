@@ -44,10 +44,36 @@ export const profile = {
   ],
 }
 
-export const stats = [
-  { value: '30+', label: 'Next.js sites shipped' },
-  { value: '40%', label: 'Search ranking lift' },
-  { value: '98%', label: 'Client satisfaction' },
+export type Stat = {
+  value: number
+  suffix: string
+  label: string
+}
+
+export const stats: Stat[] = [
+  { value: 30, suffix: '+', label: 'Next.js sites shipped' },
+  { value: 40, suffix: '%', label: 'Search ranking lift' },
+  { value: 98, suffix: '%', label: 'Client satisfaction' },
+  { value: 30, suffix: '%', label: 'App performance gain' },
+  { value: 25, suffix: '%', label: 'Engagement from motion' },
+]
+
+/** Technologies shown in the scrolling strip under the About section. */
+export const techStrip = [
+  'React',
+  'Next.js',
+  'TypeScript',
+  'JavaScript',
+  'Redux Toolkit',
+  'Tailwind CSS',
+  'GSAP',
+  'GraphQL',
+  'Angular',
+  'Node.js',
+  'Express.js',
+  'HTML5',
+  'CSS3',
+  'Git',
 ]
 
 export const experience: Experience[] = [
